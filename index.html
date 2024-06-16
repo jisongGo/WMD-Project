@@ -4,11 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const slides = document.querySelector('.slides');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let slideIndex = 0;
+
+        prevBtn.addEventListener('click', () => {
+          slideIndex =
+            slideIndex > 0 ? slideIndex - 1 : slides.children.length - 1;
+          updateSlidePosition();
+        });
+
+        nextBtn.addEventListener('click', () => {
+          slideIndex =
+            slideIndex < slides.children.length - 1 ? slideIndex + 1 : 0;
+          updateSlidePosition();
+        });
+
+        function updateSlidePosition() {
+          slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+      });
+    </script>
     <title>PHOTOGRAPH</title>
   </head>
   <body>
     <div class="fixed fixed--pos-tt fixed--role-title">
-      <p>Pieces of the Four Seasons</p>
+      <h1>Pieces of the Four Seasons</h1>
     </div>
     <ol class="fixed fixed--pos-tc fixed--role-menu">
       <li><a href="season-1">SPRING</a></li>
@@ -16,6 +40,17 @@
       <li><a href="season-3">AUTUMN</a></li>
       <li><a href="season-4">WINTER</a></li>
     </ol>
+    <div class="slider">
+      <div class="slides">
+        <img src="./assets/spring.jpeg" alt="" />
+        <img src="./assets/summer.jpeg" alt="" />
+        <img src="./assets/autumn.jpeg" alt="" />
+        <img src="./assets/winter.jpeg" alt="" />
+      </div>
+      <button class="prev">prev</button>
+      <button class="next">next</button>
+    </div>
+
     <a
       class="fixed fixed—-pos-tb fixed—-role-email"
       href="mailto:202220412@sangmyung.kr"
