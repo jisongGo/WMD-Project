@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+.fixed--pos-tt {
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.fixed--pos-tc {
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.fixed--pos-tb {
+  bottom: 0.625rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
