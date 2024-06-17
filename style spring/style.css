@@ -6,9 +6,37 @@
 
 body {
   margin: 0;
+  background-color: #faf1f2;
 }
 
 h1 {
   color: #ffc1cc;
   text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.spring {
+  position: relative;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.spring img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: default;
+  transition: transform 0.2s ease;
+}
+
+.spring img:active {
+  transform: scale(1.5);
 }

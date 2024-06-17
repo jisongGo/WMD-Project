@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPRING</title>
     <link rel="stylesheet" href="./style spring/style.css" />
+    const items = document.querySelectorAll('.item'); items.forEach(item => {
+    item.addEventListener('click', () => { item.classList.toggle('full-size');
+    }); });
   </head>
   <body>
     <h1>SPRING</h1>
-    <div class="container">
-      <div class="images">
-        <div class="imageFlex1">
-          <img src="./assets/spring1.jpeg" />
-          <img src="./assets/spring2.jpeg" />
-          <img src="./assets/spring3.jpeg" />
-          <img src="./assets/spring4.jpeg" />
-        </div>
+    <div class="grid">
+      <div class="spring">
+        <img src="./assets/spring1.jpeg" alt="spring1" />
+      </div>
+      <div class="spring">
+        <img src="./assets/spring2.jpeg" alt="spring2" />
+      </div>
+      <div class="spring">
+        <img src="./assets/spring3.jpeg" alt="spring3" />
+      </div>
+      <div class="spring">
+        <img src="./assets/spring4.jpeg" alt="spring4" />
       </div>
     </div>
   </body>
