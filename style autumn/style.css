@@ -43,3 +43,12 @@ h1 {
 .autumn img:active {
   transform: scale(1.5);
 }
+
+.move {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration-line: none;
+}
