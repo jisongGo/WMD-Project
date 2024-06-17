@@ -12,8 +12,8 @@ body {
 
 img {
   display: block;
-  width: 50rem;
-  height: 900px;
+  width: 100%;
+  padding: 11.25rem 7.5rem 5rem;
 }
 
 .fixed {
@@ -22,7 +22,6 @@ img {
 
   &--pos {
     &-tt {
-      top: 16px;
       left: 50%;
       font-size: 1.5625rem;
       white-space: nowrap;
@@ -45,6 +44,13 @@ img {
       left: 50%;
       transform: translate(-50%, 0);
     }
+
+    &-center {
+      position: fixed;
+      width: 100%;
+      max-width: 680px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -64,7 +70,6 @@ img {
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  margin-top: 12.5rem;
 }
 
 button {
