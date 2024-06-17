@@ -12,11 +12,13 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 50rem;
+  height: 900px;
 }
 
 .fixed {
   position: fixed;
+  z-index: 1;
 
   &--pos {
     &-tt {
@@ -59,7 +61,8 @@ img {
 }
 
 .slides img {
-  max-width: 100%;
+  flex-shrink: 0;
+  width: 100%;
   height: auto;
   margin-top: 12.5rem;
 }
