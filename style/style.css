@@ -39,6 +39,8 @@ img {
 .fixed--pos-tb {
   bottom: 0.625rem;
   left: 50%;
+  color: black;
+  text-decoration-line: none;
   transform: translate(-50%, 0);
 }
 .fixed--pos-center {
