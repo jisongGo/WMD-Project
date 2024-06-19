@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   background-color: #faf1f2;
 }
 
@@ -43,8 +43,7 @@ p {
   width: 100%;
   height: 100%;
   cursor: default;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: transform 0.2s ease;
 }
 
